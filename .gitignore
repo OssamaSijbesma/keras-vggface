@@ -7,7 +7,7 @@
 *.pyc
 dist/
 *.egg-info
-
+venv
 
 
 # Created by https://www.gitignore.io/api/macos,pycharm

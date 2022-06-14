@@ -91,7 +91,7 @@ def decode_predictions(preds, top=5):
     results = []
     for pred in preds:
         top_indices = pred.argsort()[-top:][::-1]
-        result = [[str(LABELS[i].encode('utf8')), pred[i]] for i in top_indices]
+        result = [[str(LABELS[i]), pred[i]] for i in top_indices]
         result.sort(key=lambda x: x[1], reverse=True)
         results.append(result)
     return results
